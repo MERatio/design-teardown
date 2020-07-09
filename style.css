@@ -18,7 +18,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans HK', sans-serif;
   color: #fff;
   line-height: 1.5;
 }
@@ -56,7 +56,7 @@ a {
 
 .header span {
   background-color: var(--dark-1);
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   box-decoration-break: clone;
   font-size: 3.6rem;
 }
@@ -80,9 +80,13 @@ a {
   padding: 20rem 5vw 14rem;
 }
 
-.article {
+.main-article {
   background-color: var(--dark-2);
   height: 100%;
+}
+
+.main-article-title {
+  font-size: 4rem;
 }
 
 /* Other articles */
@@ -103,6 +107,17 @@ a {
   height: 100%;
 }
 
+.other-article-title {
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.other-article-paragraph {
+  font-size: 1.9rem;
+  line-height: 3.2rem;
+  margin-top: 6rem;
+}
+
 /* Two column promotion */
 
 .two-column-promotion {
@@ -111,29 +126,52 @@ a {
   flex-wrap: wrap;
 }
 
-.first {
+.first-container {
   width: 25%;
   padding: 2rem;
 }
 
-.second {
+.second-container {
   width: 75%;
   padding: 2rem;
 }
 
-.first .other-article {
+.first-container .other-article {
   background-color: var(--dark-3);
-  height: 35%;
+  height: 100%;
 }
 
-.ad {
+.first {
   background-color: var(--dark-2);
-  height: 35%;
+  height: 100%;
 }
 
-.sign-up {
+.second {
   background-color: var(--dark-1);
   height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.second-header {
+  font-size: 4.2rem;
+  text-decoration: underline;
+}
+
+.second-paragraph {
+  max-width: 60rem;
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 /* See more */
@@ -152,16 +190,45 @@ a {
   padding: 1rem;
 }
 
-/* Click */
+/* Big box */
 
-.click-container {
+.big-box-container {
   height: 105rem;
   padding: 3.5rem 0;
 }
 
-.click {
+.big-box {
   background-color: var(--dark-1);
   height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem;
+}
+
+.big-box-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.big-box-date {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.big-box-title {
+  font-size: 4.8rem;
+  text-decoration: underline;
+  margin-top: 4rem;
+}
+
+.big-box-paragraph {
+  max-width: 55vw;
+  font-size: 2.2rem;
 }
 
 /* Person of the week */
@@ -190,6 +257,16 @@ a {
   height: 100%;
 }
 
+.potw-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.potw-paragraph {
+  font-size: 2rem;
+  margin-top: 2.6rem;
+}
+
 /* External articles */
 
 .external-articles {
@@ -209,16 +286,44 @@ a {
   height: 100%;
 }
 
+.external-article-title {
+  font-size: 3rem;
+}
+
+.external-article-paragraph {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
 /* Book */
 
 .book-container {
   background-color: var(--dark-1);
   height: 40.5rem;
-  padding: 0 7rem;
+  padding: 5rem 7rem;
 }
 
 .book {
   height: 100%;
+}
+
+.book-text {
+  max-width: 65%;
+}
+
+.book-featured-on {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.book-title {
+  font-size: 4.6rem;
+  text-decoration: underline;
+}
+
+.book-paragraph {
+  font-size: 2rem;
+  margin-top: 4rem;
 }
 
 /* Cards */
@@ -237,10 +342,30 @@ a {
   min-height: 47rem;
 }
 
+.card-title {
+  font-size: 4.2rem;
+  text-decoration: underline;
+}
+
+.card-paragraph {
+  font-size: 2rem;
+  margin-top: 3.5rem;
+}
+
 .card-newsletter {
   background-color: var(--dark-1);
-  padding: 2rem 0;
+  padding: 3.8rem;
   height: 80rem;
+}
+
+.card-newsletter-content {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-newsletter-text {
+  height: 50%;
 }
 
 /* Footer */
@@ -248,4 +373,12 @@ a {
 .footer {
   background-color: var(--dark-1);
   height: 100vh;
+  padding: 5rem;
+  text-align: center;
+}
+
+.footer-topics-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin: 2.8rem 0;
 }
