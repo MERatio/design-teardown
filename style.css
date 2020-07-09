@@ -1,3 +1,11 @@
+:root {
+  --dark-1: #111;
+  --dark-2: #333;
+  --dark-3: #555;
+  --dark-4: #777;
+  --dark-5: #999;
+}
+
 * {
   box-sizing: inherit;
   padding: 0;
@@ -23,7 +31,7 @@ a {
 /* Nav */
 
 .nav {
-  background-color: #000;
+  background-color: var(--dark-2);
   height: 10.2rem;
 }
 
@@ -47,7 +55,7 @@ a {
 }
 
 .header span {
-  background-color: #000;
+  background-color: var(--dark-1);
   padding: 1.5rem;
   box-decoration-break: clone;
   font-size: 3.6rem;
@@ -60,7 +68,7 @@ a {
 }
 
 .color-change {
-  background-color: #000;
+  background-color: var(--dark-4);
   width: 23.5rem;
   height: 6rem;
   border: none;
@@ -73,7 +81,7 @@ a {
 }
 
 .article {
-  background-color: #000;
+  background-color: var(--dark-2);
   height: 100%;
 }
 
@@ -91,7 +99,7 @@ a {
 }
 
 .other-article {
-  background-color: #000;
+  background-color: var(--dark-3);
   height: 100%;
 }
 
@@ -113,13 +121,18 @@ a {
   padding: 2rem;
 }
 
+.first .other-article {
+  background-color: var(--dark-3);
+  height: 35%;
+}
+
 .ad {
-  background-color: #000;
+  background-color: var(--dark-2);
   height: 35%;
 }
 
 .sign-up {
-  background-color: #000;
+  background-color: var(--dark-1);
   height: 100%;
 }
 
@@ -133,7 +146,7 @@ a {
 
 .see-more {
   display: inline-block;
-  background-color: #000;
+  background-color: var(--dark-5);
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1rem;
@@ -147,7 +160,7 @@ a {
 }
 
 .click {
-  background-color: #000;
+  background-color: var(--dark-1);
   height: 100%;
 }
 
@@ -165,14 +178,14 @@ a {
 }
 
 .potw-img-container {
-  background-color: #000;
+  background-color: var(--dark-2);
   flex: 1;
   height: 100%;
   margin-right: 2rem;
 }
 
 .potw-text {
-  background-color: #000;
+  background-color: var(--dark-3);
   flex: 3;
   height: 100%;
 }
@@ -192,14 +205,14 @@ a {
 }
 
 .external-article {
-  background-color: #000;
+  background-color: var(--dark-3);
   height: 100%;
 }
 
 /* Book */
 
 .book-container {
-  background-color: #000;
+  background-color: var(--dark-1);
   height: 40.5rem;
   padding: 0 7rem;
 }
@@ -219,13 +232,13 @@ a {
 }
 
 .card {
-  background-color: #000;
+  background-color: var(--dark-2);
   padding: 3.8rem;
   min-height: 47rem;
 }
 
 .card-newsletter {
-  background-color: #000;
+  background-color: var(--dark-1);
   padding: 2rem 0;
   height: 80rem;
 }
@@ -233,6 +246,6 @@ a {
 /* Footer */
 
 .footer {
-  background-color: #000;
+  background-color: var(--dark-1);
   height: 100vh;
 }
